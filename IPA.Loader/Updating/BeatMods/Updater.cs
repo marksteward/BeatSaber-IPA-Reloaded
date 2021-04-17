@@ -282,7 +282,8 @@ namespace IPA.Updating.BeatMods
             onComplete?.Invoke(depList);
 
             if (!ModListPresent && SelfConfig.Updates_.AutoUpdate_)
-                StartDownload(depList.Value);
+                Logger.updater.Debug("Would auto-update mods");
+                //StartDownload(depList.Value);
         }
 
         internal IEnumerator ResolveDependencyRanges(Ref<List<DependencyObject>> list)

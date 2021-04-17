@@ -87,7 +87,8 @@ namespace IPA.Injector
 
                 AntiMalwareEngine.Initialize();
 
-                Updates.InstallPendingUpdates();
+                log.Debug("Would install updates");
+                //Updates.InstallPendingUpdates();
 
                 LibLoader.SetupAssemblyFilenames(true);
 
